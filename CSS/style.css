@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: #000;
+}
+
+/*Navigation bar*/
+
+.header_navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid seashell;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+}
+
+.navbar {
+    display: flex;
+}
+
+.nav_img {
+    height: 50px;
+    margin-left: 10px;
+    padding: 7px 0;
+}
+
+.navbar a {
+    color: seashell;
+    padding: 22px;
+    transition: background-color 1s;
+}
+
+.navbar a:hover {
+    background-color: grey;
+}
+
+main {
+    padding: 70px 20px;
+    width: 100%;
+}
+
+/*Our Mission*/
+
+#mission {
+    height: 700px;
+    width: 90%;
+    margin: auto;
+    background-image: url(../resources/images/img-mission-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+}
+.our-mission {
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+}
+
+/*Tea of the Month*/
+
+#tea-month {
+    text-align: center;
+    margin: 60px;
+}
+
+#tea-month h2, h3 {
+    line-height: 60px;
+}
+
+.tea-pics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+figure img {
+    height: 200px;
+    width: 300px;
+    margin: 10px;
+}
+
+@media only screen and (max-width 700px) {
+    .tea-pics {
+        display: block;
+    }
+
+    figure img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/*Locations*/
+
+#locations {
+    height: 500px;
+    width: 90%;
+    margin: auto;
+    background-image: url(../resources/images/img-locations-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;ˇ
+
+    display: flex;
+    align-items: center;
+}
+#locations ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#locations li {
+    margin: 15px 20px;
+    align-items: center;
+    flex: 0 0 300px;
+    line-height: 60px;
+    background-color: black;
+}
+
+/*The Tea Cosy*/
+
+#tea-cosy {
+    text-align: center;
+}
+
+#tea-cosy h2 {
+    padding: 9px;
+}
+
+#tea-cosy h5 {
+    padding: 25px;
+}
+
+/*Footer*/
+
+footer h5 {
+    padding: 20px;
+}
